@@ -1,0 +1,331 @@
+Python Notes
+
+https://www.anaconda.com/distribution/
+
+Installation path: C:Anaconda3
+
+Major uses of python
+
+* Embedded scripting 
+* Image Processing 
+* Scientific and Numeric programming
+* Database programming
+* System utilities 
+* GUIs 
+* Internet Scripting 
+
+160000+ libraries ==> https://pypi.org/ 
+Python does not use Semicolons nor brackets
+Python uses indentation 
+
+Python Implementations
+
+Cpython ==> written in C
+jython ==> java
+IronPython ==> .NET
+PYPY ==> RPython
+
+
+Objects in Python-
+----------------
+
+
+number
+=============
+Number can be integer or decimal or octal  or hexa 
+val=10
+fval=45.434
+
+
+string
+=============
+string is sequence of characters
+string is defined in single quotes or double quotes or triple ruotes 
+
+name = 'python programming' 
+aname= "unix shell scripting" 
+bname= """java programming"""
+cname= '''scala programming'''
+
+
+list (array in c)
+=========================
+
+In C : int val[3] = {10,20,30}
+In python : val = [10,20,30]
+
+List is ste of elements. 
+Elements can be set of numbers or set of strings or combination. 
+list elements are defined in []
+
+
+alist = [10,20,30,40]
+blist = ["unix","scala","spark","hadoop"]
+clist = [10,20,"unix","scala",4000,56.44]
+
+tuple
+===========================
+tuple is read only. elements inside tuple cannot be modified. 
+tuple is set of elements. 
+Elements can be set of numbers or set of strings or combination. 
+tuple elements are defined in ()
+
+
+dictionary
+=============================
+Dictionary contains elements in the form of keys and values. 
+Dictionary elements are defined in {}
+Dictionary keys are always unique
+ 
+
+syntax:  dictionary = { key:value, key: value, key: value}
+example: book = {"chap1":10, "chap2":20 , "chap": 30} 
+		 data = {10,20, 30:40, 50:30} 
+
+
+set
+=================================
+Set is group of elements.
+Set elements are defined in {}
+Indexing is not permitted for set. 
+
+
+
+
+
+comments in python 
+============================
+
+single line comment (#)
+
+any line starting with # is treated as commented line
+
+multiline comment
+========================
+
+all the line that are defined in between ''' and ''' and ignored 
+
+
+
+
+How to get the list of built in functions and exceptions 
+
+In the interactive prompt. 
+
+dir(_builtins_) # it displays alll built in exceptions and functions. 
+
+Statements in python
+=======================
+
+conditional statements
+----------------------
+if 
+if-else
+if-elif-elif-elif-elif-else
+
+
+control statements
+---------------------
+
+for loop
+while loop
+
+
+jump statements
+-----------------
+
+
+
+
+## for loop with string
+name ="python"
+for char in name: 
+	print(char)
+	
+	
+# for loop with list
+alist =[10,20,30,40]
+for val in alist:
+	print(val)
+	
+## for loop with dictionary
+
+book = {"chap1":10, "chap2": 20}
+for key in book:
+	print(key)
+	print("Value :", book[key])
+
+
+
+####################
+
+Download GIT and register on github.com
+
+
+-------------------------
+
+void add(int a, int b)
+{ int c=a+b;
+}
+add(1,2)
+
+
+
+#############################
+ break : come out of the loop is some condition is meet
+
+userinput = int(input("Enter any value :"))
+for val in range (1,10):
+	if val == userinput:
+		break
+	print (val)
+	
+	
+	
+#################################
+ continue : it skips the current iteration
+
+userinput = int (input("Enter any value :"))
+for val in range (1,10): 
+	if val ==userinput: 
+		continue
+	print (val)
+	
+
+##############################
+function or defination  or module
+
+basically there are two types of functions 
+
+1. builtin functions dir(__builtins__)
+--------------
+
+print() : 
+len()	: length of the object
+input() : cpature the data from keyboard
+id()	: unique identity of any object
+type()	: cross check the type of code
+isinstance() : 
+range(start,stop,
+help()
+dir()
+
+conversion functions
+list()
+tuple()
+set()
+dict()
+int()
+float()
+hex()
+oct()
+str()
+
+
+2. user defined functions
+---------------------------
+
+in python function block starts with keyword def.
+
+
+def add(first,second):
+	total = first + second 
+	return total
+	
+gettotal = add(10,20)
+	print(gettotal)
+
+----------------------------------------------
+
+# function body 
+def add(first,second):
+	total = first + second 
+	return total
+print("Program begins from here")
+gettotal = add(10,20)
+	print("Sum of the numbers :", gettotal)
+print("Program ends from here")
+
+
+
+
+
+
+passing arguments
+--------------------
+
+fixed arguments 
+
+default arguments 
+
+keyword arguments 
+
+variable length arguments 
+
+
+
+==================================
+
+File handling 
+
+working with flat files 
+
+working with third party files 
+
+----------------------------
+
+How to open the file in python? 
+
+obj = open (filename,mode)
+
+
+Example: 
+
+fobj = open ("customers.txt","r") --> file opened in read mode 
+fobj = open ("customers.txt","w") --> file opened in write mode 
+fobj = open ("customers.txt","a") --> file opened in append mode 
+
+
+file modes
+---------
+
+r - read mode 
+
+--- 
+
+case1: if file is not found .. it diplays error message 
+
+case 2 : if file exists.. it diplays the file content
+
+
+w- write mode 
+-----------------
+case 1: if file is not available.. it creates the file an write the data
+case2: if file exists.. it overwrites the data and starts from scratch. 
+
+a - append mode 
+
+case 1: if file is not available.. it creates the file an write the data
+case2: if file exists.. it appends the dataat the end of the file 
+
+
+
+#####################
+
+file read operation 
+
+reading line by line 
+
+reading the whole file at a time (fobj.readlines() fobj.read())
+
+
+
+
+
+
+
+
+
+
+
+
